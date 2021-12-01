@@ -1,0 +1,160 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+section {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+section.portfolio-1 {
+  height: 100vh;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+.portfolio-1 .wrap {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.portfolio-1 .wrap h2 {
+  display: inline-block;
+  height: 210px;
+  font-size: 7vw;
+}
+
+.portfolio-1 .wrap h2 span {
+  font-style: italic;
+  animation: writeWave 1.7s infinite ease-in-out both;
+  animation-delay: var(--delay);
+  --delay: calc((var(--variable-index)) * 0.05s);
+}
+
+@keyframes writeWave {
+  0% {
+    font-weight: 43;
+  }
+  50% {
+    font-weight: 950;
+  }
+  100% {
+    font-weight: 43;
+  }
+}
+
+.portfolio-1 .wrap h3 {
+  font-size: 2vw;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+/* 어바웃페이지 */
+
+.about-page {
+  height: 100vh;
+  text-align: center;
+}
+
+.about-page div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-page h2 {
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.about-page h3 {
+  margin-top: 2%;
+  font-size: 3vw;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.about-page h3 span {
+  font-weight: 100;
+  cursor: pointer;
+  position: relative;
+}
+
+.about-page h3 span:hover {
+  border-bottom: 2px solid #000;
+}
+
+.about-page h3 span .about-img {
+  position: absolute;
+  border: 3px solid black;
+  padding: 1rem;
+  bottom: 90%;
+  left: 0;
+  z-index: 999;
+  animation: rotateImg 3s ease-in-out 1 both;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  width: 15vw;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.about-page h3 span .about-img.on {
+  display: inline-block;
+}
+
+/* 콘텍트미 페이지 */
+
+.contact-me {
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-me .info {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-me h2 {
+  font-size: 81px;
+
+  margin-bottom: 5%;
+}
+
+.contact-me .info-circle {
+  display: flex;
+  align-items: center;
+}
+
+.contact-me .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: blue;
+  display: inline-block;
+  margin-left: 3%;
+}
+
+.contact-me .box {
+  display: inline-block;
+  width: 50vw;
+  height: 60px;
+  background-color: white;
+  margin: 2% 0;
+  font-size: 1.5rem;
+}
+
+.contact-me .box:nth-child(2n) {
+  margin: 2% -2% 2% 0;
+}

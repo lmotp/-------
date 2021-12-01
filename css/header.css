@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ede3c9;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* 헤더부분 */
+header {
+  width: 100%;
+  position: fixed;
+  padding: 1rem 3rem;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Barlow', sans-serif;
+  z-index: 9999;
+  background: black;
+}
+
+header .logo {
+  font-size: 21px;
+  color: #fff;
+  font-weight: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header nav a {
+  position: relative;
+  right: 0;
+  font-size: 1rem;
+  color: #999999;
+  opacity: 0;
+  transition: opacity 0.3s, right 1s, color 0.5s ease-in-out;
+  transition-delay: right var(--delay-menu);
+  --delay-menu: calc((var(--menu-index)) * 0.5s);
+}
+
+header nav a.open {
+  opacity: 1;
+  right: calc(var(--menu-index) * 30px);
+}
+
+header nav a:hover {
+  color: #fff;
+}
