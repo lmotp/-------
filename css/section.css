@@ -110,7 +110,7 @@ section.portfolio-1 {
   height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .contact-me .info {
@@ -127,7 +127,7 @@ section.portfolio-1 {
 
 .contact-me h2 {
   font-size: 5vw;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .contact-me .info-circle {
@@ -137,8 +137,8 @@ section.portfolio-1 {
 .contact-me .circle {
   width: 72vw;
   height: 72vw;
-  max-width: 360px;
-  max-height: 360px;
+  max-width: 400px;
+  max-height: 400px;
   border-radius: 10%;
   background: url('../images/profile.jpg') center no-repeat;
   background-size: cover;
