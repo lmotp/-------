@@ -34,6 +34,10 @@
     width: 20vw;
   }
 
+  main {
+    padding-top: 12%;
+  }
+
   main .slide-wrap {
     align-items: center;
     flex-direction: column;
@@ -110,6 +114,9 @@
 
   .about-page h3 span .about-img {
     width: 20vw;
+  }
+  main {
+    padding-top: 18%;
   }
 
   main .slide-wrap {
