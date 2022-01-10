@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
@@ -30,7 +32,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 9999;
+  z-index: 101;
   background: black;
 }
 
@@ -42,22 +44,37 @@ header .logo {
   cursor: pointer;
 }
 
+header nav {
+  display: flex;
+}
+
 header nav a {
-  position: relative;
-  right: 0;
-  font-size: 1rem;
-  color: #999999;
   opacity: 0;
-  transition: opacity 0.3s, right 1s, color 0.5s ease-in-out;
-  transition-delay: right var(--delay-menu);
-  --delay-menu: calc((var(--menu-index)) * 0.5s);
+  font-size: 1rem;
+  margin-right: 30px;
+  color: #999999;
+  transition: opacity 0.3s, color 0.5s ease-in-out;
 }
 
 header nav a.open {
   opacity: 1;
-  right: calc(var(--menu-index) * 30px);
 }
 
 header nav a:hover {
   color: #fff;
+  transform: rotate(5deg);
+}
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: border 0.5s ease-in-out;
+  z-index: 102;
 }

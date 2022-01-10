@@ -1,16 +1,22 @@
 @media screen and (max-width: 1024px) {
+  .container {
+    scroll-snap-type: none;
+    overflow-y: auto;
+    height: 100vh;
+  }
+
   header .logo {
     display: none;
   }
 
   header nav {
     width: 100%;
-    display: flex;
     justify-content: space-evenly;
+    color: #999999;
   }
 
   header nav a {
-    position: unset;
+    opacity: 1;
     font-size: 2vw;
   }
 
@@ -90,8 +96,11 @@
 }
 
 @media screen and (max-width: 425px) {
+  header {
+    padding: 0.5rem 1.5rem;
+  }
   header nav a {
-    position: unset;
+    margin-right: 6px;
     font-size: 3.5vw;
   }
 

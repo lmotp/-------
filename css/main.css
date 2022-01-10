@@ -4,7 +4,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 
 main .slide-wrap {
@@ -44,7 +44,7 @@ main .slide-wrap:nth-child(2n + 1) .work-contents {
   text-align: left;
 }
 
-main .slide-wrap .work-contents h2 {
+main .slide-wrap .work-contents h3 {
   font-size: 2vw;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
@@ -57,7 +57,6 @@ main .slide-wrap .work-contents a button {
   border-radius: 8%;
   outline: none;
   background: transparent;
-  cursor: pointer;
   margin-top: 10%;
   transition: all 0.3s ease-in-out;
 }
