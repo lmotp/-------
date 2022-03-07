@@ -11,14 +11,14 @@ main .slide-wrap {
   justify-content: space-between;
   width: 70%;
   display: flex;
-  margin-bottom: 3%;
+  /* margin-bottom: 3%; */
 }
 
 main .slide-wrap .slide-image {
   width: 50%;
-  border-radius: 5%;
   height: 500px;
   overflow: hidden;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 15%);
 }
 
 main .slide-wrap .slide-image img {
@@ -27,14 +27,18 @@ main .slide-wrap .slide-image img {
   object-fit: cover;
 }
 
+main .slide-wrap:first-child .slide-image img {
+  object-position: -164px 0;
+}
+
 main .slide-wrap .work-contents {
   width: 50%;
   text-align: right;
   padding-left: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  font-size: 1.2vw;
+  justify-content: center;
+  font-size: 1.1vw;
   line-height: 1.5;
 }
 
