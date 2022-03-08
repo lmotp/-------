@@ -48,6 +48,13 @@ main .slide-wrap:nth-child(2n + 1) .work-contents {
   text-align: left;
 }
 
+main .slide-wrap:nth-child(2n + 1) .work-contents a {
+  align-self: flex-end;
+}
+main .slide-wrap:nth-child(2n + 1) .work-contents a button {
+  text-align: right;
+}
+
 main .slide-wrap .work-contents h3 {
   font-size: 2vw;
   padding-bottom: 20px;
@@ -55,13 +62,20 @@ main .slide-wrap .work-contents h3 {
   margin-bottom: 36px;
 }
 
+main .slide-wrap .work-contents a {
+  align-self: flex-start;
+}
+
 main .slide-wrap .work-contents a button {
-  font-size: 0.8vw;
-  padding: 2% 4%;
-  border-radius: 8%;
+  font-size: 14px;
   outline: none;
-  background: transparent;
-  margin-top: 10%;
+  margin-top: 80px;
+  width: 80px;
+  padding-bottom: 4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: left;
   transition: all 0.3s ease-in-out;
 }
 
