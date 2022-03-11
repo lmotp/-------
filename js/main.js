@@ -4,6 +4,8 @@ const menus = document.querySelectorAll('nav a');
 const contents = document.querySelectorAll('.about-page span');
 const slides = document.querySelectorAll('.slide-wrap');
 const cursor = document.querySelector('.cursor');
+const main = document.querySelector('main');
+const a = main.querySelectorAll('a');
 
 logo.addEventListener('click', function () {
   menus.forEach((e) => {
@@ -28,6 +30,15 @@ document.addEventListener('mousemove', function (e) {
 const cursorChange = (color) => () => {
   cursor.style.border = `2px solid ${color}`;
 };
+
+a.forEach((v) => {
+  v.addEventListener('mouseover', (e) => {
+    cursor.classList.add('on');
+  });
+  v.addEventListener('mouseleave', (e) => {
+    cursor.classList.remove('on');
+  });
+});
 
 gnb.addEventListener('mouseenter', cursorChange('white'));
 gnb.addEventListener('mouseleave', cursorChange('black'));
